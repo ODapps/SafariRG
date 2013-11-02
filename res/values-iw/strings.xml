@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ספארי רמת גן</string>
+    <string name="action_settings">Settings</string>
+    <string name="splash_loading">טוען...</string>
+
+    <!-- Buttons Strings -->
+    <string name="btn_map">מפה</string>
+    <string name="btn_useful">שימושי</string>
+    <string name="btn_animals">בעלי חיים</string>
+    <string name="btn_info">מידע</string>
+
+</resources>

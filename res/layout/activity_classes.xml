@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraund_logo"
+    android:orientation="vertical"
+    tools:context=".ClassesActivity" >
+
+    <ViewFlipper
+        android:id="@+id/vfClasses"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <ImageView
+            android:id="@+id/ivBirds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@raw/classes_birds" />
+
+        <ImageView
+            android:id="@+id/ivMammals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@raw/classes_mammals" />
+
+        <ImageView
+            android:id="@+id/ivReptiles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@raw/classes_reptiles" />
+    </ViewFlipper>
+
+    <ListView
+        android:id="@+id/lvClasses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/White"
+        android:dividerHeight="1px"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

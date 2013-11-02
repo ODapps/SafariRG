@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraund_logo"
+    tools:context=".MapActivity" >
+
+    <com.odapps.safarirg.classes.TouchImageView
+        android:id="@+id/touchImageViewMap"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="center" />
+
+    <Button
+        android:id="@+id/Button_Map"
+        style="@style/ButtonSmall"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/backgraund_button"
+        android:drawableTop="@drawable/ic_map_w"
+        android:fitsSystemWindows="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Button06"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_useful_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_useful" />
+
+                <Button
+                    android:id="@+id/Button05"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_useful_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_useful" />
+
+                <Button
+                    android:id="@+id/Button07"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_map_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_map" />
+
+                <Button
+                    android:id="@+id/Button09"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_animals_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_animals"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/Button08"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_info_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_info" />
+
+                <Button
+                    android:id="@+id/Button04"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_useful_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_useful" />
+
+                <Button
+                    android:id="@+id/Button03"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_useful_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_useful" />
+
+                <Button
+                    android:id="@+id/Button01"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_map_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_map" />
+
+                <Button
+                    android:id="@+id/main_bAnimals"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_animals_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_animals"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/ButtonTest"
+                    style="@style/ButtonMenu"
+                    android:background="@drawable/backgraund_button"
+                    android:drawableTop="@drawable/ic_info_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_info" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

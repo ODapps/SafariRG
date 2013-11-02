@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SafariRG</string>
+    <string name="action_settings">Settings</string>
+    <string name="splash_loading">Loading</string>
+
+    <!-- Buttons Strings -->
+    <string name="btn_map">מפה</string>
+    <string name="btn_useful">שימושי</string>
+    <string name="btn_animals">בעלי חיים</string>
+    <string name="btn_info">מידע</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="all">All</string>
+
+</resources>

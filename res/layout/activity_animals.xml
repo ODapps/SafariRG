@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraund_logo"
+    android:orientation="vertical"
+    tools:context=".AnimalsActivity" >
+
+    <ListView
+        android:id="@+id/lvAnimals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/White"
+        android:dividerHeight="1px"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>
