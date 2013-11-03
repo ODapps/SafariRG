@@ -16,12 +16,12 @@ import android.widget.ListView;
 
 public class AnimalsActivity extends Activity {
 
-	List<StandardListItem> animalsList;
-	StandardListAdapter animalsAdapter;
-	int animalClass;
-	String path;
+	private List<StandardListItem> animalsList;
+	private StandardListAdapter animalsAdapter;
+	private int animalClass;
+	private String path;
 
-	ListView lvAnimals;
+	private ListView lvAnimals;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -82,11 +82,13 @@ public class AnimalsActivity extends Activity {
 		animalsList.add(new StandardListItem(0, "Ostrich", "Bird", path + "classes_birds"));
 		animalsList.add(new StandardListItem(0, "Eagle", "Bird", path + "classes_birds"));
 	}
+
 	private void addReptiles() {
 		animalsList.add(new StandardListItem(0, "Turtle", "Reptile", path + "classes_reptiles"));
 		animalsList.add(new StandardListItem(C.SNAKE, "Snake", "Reptile", path + "classes_reptiles"));
 		animalsList.add(new StandardListItem(0, "Lizard", "Reptile", path + "classes_reptiles"));
 	}
+
 	private void addMammals() {
 		animalsList.add(new StandardListItem(C.LION, "Lion", "Mammal", path + "classes_mammals"));
 		animalsList.add(new StandardListItem(C.GORILLA, "Gorilla", "Mammal", path + "classes_mammals"));

@@ -24,7 +24,7 @@ public class TouchImageView extends ImageView {
 	int mode = NONE;
 
 	private static float DEFUALT_ZOOM = 1f;
-	
+
 	// Remember some things for zooming
 	PointF last = new PointF();
 	PointF start = new PointF();
@@ -64,7 +64,7 @@ public class TouchImageView extends ImageView {
 
 	// Center of the focused area in pixels
 	private PointF centerFocus = new PointF();
-	
+
 	public TouchImageView(Context context) {
 		super(context);
 		sharedConstructing(context);
@@ -138,7 +138,7 @@ public class TouchImageView extends ImageView {
 
 		});
 	}
-	
+
 	public void setDefulatZoom(float x) {
 		DEFUALT_ZOOM = x;
 	}
@@ -236,7 +236,7 @@ public class TouchImageView extends ImageView {
 
 		centerFocus.x = (float) viewWidth/2;
 		centerFocus.y = (float) viewHeight/2;
-		
+
 		//
 		// Rescales image on rotation
 		//
@@ -286,20 +286,20 @@ public class TouchImageView extends ImageView {
 		ViewGroup parent = (ViewGroup) getParent();
 		parent.addView(pin);
 	}
-	
+
 	public ZoomablePinView getPin() {
 		return pin;
 	}
 
 	private void moveCenterPointZoom (float focusX, float focusY, float scale) {
-			float centerViewX = (float) viewWidth/2;
-			float centerViewY = (float) viewHeight/2;
-			float focusDistanceX = centerViewX - focusX;
-			float focusDistanceY = centerViewY - focusY;
-			float deltaX = focusDistanceX / scale - focusDistanceX;
-			float deltaY = focusDistanceY / scale - focusDistanceY;
-			centerFocus.x += deltaX / (saveScale / scale);
-			centerFocus.y += deltaY / (saveScale / scale);
+		float centerViewX = (float) viewWidth/2;
+		float centerViewY = (float) viewHeight/2;
+		float focusDistanceX = centerViewX - focusX;
+		float focusDistanceY = centerViewY - focusY;
+		float deltaX = focusDistanceX / scale - focusDistanceX;
+		float deltaY = focusDistanceY / scale - focusDistanceY;
+		centerFocus.x += deltaX / (saveScale / scale);
+		centerFocus.y += deltaY / (saveScale / scale);
 	}
 
 	private void moveCenterPointDrag (float deltaX, float deltaY) {
@@ -322,6 +322,5 @@ public class TouchImageView extends ImageView {
 	public void setCenterFocus(PointF centerFocus) {
 		this.centerFocus = centerFocus;
 	}
-	
-	
+
 }

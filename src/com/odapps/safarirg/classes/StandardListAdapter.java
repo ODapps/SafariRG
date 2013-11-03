@@ -56,4 +56,5 @@ public class StandardListAdapter extends ArrayAdapter<StandardListItem>{
 			tvDes.setText(item.getItemDes());
 		return block;
 	}
+
 }

@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -20,11 +19,11 @@ import android.widget.ViewFlipper;
 
 public class ClassesActivity extends Activity {
 
-	List<StandardListItem> classesList;
-	StandardListAdapter animalsAdapter;
+	private List<StandardListItem> classesList;
+	private StandardListAdapter animalsAdapter;
 
-	ViewFlipper vfClasses;
-	ListView lvClasses;
+	private ViewFlipper vfClasses;
+	private ListView lvClasses;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

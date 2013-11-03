@@ -11,8 +11,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 public class Module_GetHTTP {
 
-
-
 	public static String getInternetData()  throws Exception{
 
 		BufferedReader in = null;
@@ -32,13 +30,10 @@ public class Module_GetHTTP {
 			String nl = System.getProperty("line.separator");
 			while((l = in.readLine()) != null) {
 				sb.append(l + nl);
-
 			}
 			in.close();
 			data = sb.toString();
 			return data;
-
-
 
 		} finally {
 
@@ -48,11 +43,11 @@ public class Module_GetHTTP {
 
 
 				} catch (Exception e) {
-					//Log.e(e.getMessage());
 					e.printStackTrace();
 				}
 			}
 		}
 	}		
+
 }
 

@@ -2,59 +2,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/backgraund_logo"
+    android:background="@drawable/background_logo"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:weightSum="1"
     tools:context=".SplashActivity" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="1" >
+        android:weightSum="100" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/tvAppName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0.7"
+            android:layout_weight="70"
             android:gravity="center_vertical|center_horizontal"
-            android:text="ספארי רמת גן"
+            android:text="@string/app_name"
             android:textColor="@color/White"
             android:textSize="35sp"
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/MarkView"
+            android:id="@+id/ivLogo"
             android:layout_width="86dp"
             android:layout_height="86dp"
-            android:layout_weight="0.3"
+            android:layout_weight="30"
             android:src="@drawable/logo_safarirg" />
-
     </LinearLayout>
 
-  
-      <HorizontalScrollView 
-        android:id="@+id/scroll"
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fadingEdgeLength="0dp"
         android:scrollbars="none" >
 
         <TextView
-            android:id="@+id/textView_News"
+            android:id="@+id/tvNews"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="1"
             android:textColor="@color/WhiteSmoke"
             android:textStyle="bold" />
-
     </HorizontalScrollView>
-
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -66,42 +60,38 @@
             android:layout_height="match_parent" >
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/ivMenuFlipper"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/menu_polaroid_frames" />
 
             <ViewFlipper
-                android:id="@+id/viewFlipper1"
+                android:id="@+id/vfMenuAnimalsImages"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.68" >
 
                 <Button
-                    android:id="@+id/Button06"
+                    android:id="@+id/Button01"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
                     android:drawableTop="@drawable/ic_useful_w"
                     android:fitsSystemWindows="false"
                     android:text="@string/btn_useful" />
 
                 <Button
-                    android:id="@+id/Button05"
+                    android:id="@+id/Button02"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
-                    android:drawableTop="@drawable/ic_useful_w"
+                    android:drawableTop="@drawable/ic_info_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_useful" />
+                    android:text="@string/btn_info" />
 
                 <Button
-                    android:id="@+id/Button07"
+                    android:id="@+id/Button03"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
                     android:drawableTop="@drawable/ic_map_w"
                     android:fitsSystemWindows="false"
                     android:text="@string/btn_map" />
             </ViewFlipper>
-
         </RelativeLayout>
     </LinearLayout>
 
@@ -110,7 +100,7 @@
         android:layout_height="wrap_content" >
 
         <HorizontalScrollView
-            android:id="@+id/horizontalScrollView1"
+            android:id="@+id/hsvMenuButtons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.14"
@@ -122,42 +112,30 @@
                 android:orientation="horizontal" >
 
                 <Button
-                    android:id="@+id/Button04"
+                    android:id="@+id/bMenuUseful"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
                     android:drawableTop="@drawable/ic_useful_w"
                     android:fitsSystemWindows="false"
                     android:text="@string/btn_useful" />
 
                 <Button
-                    android:id="@+id/Button03"
+                    android:id="@+id/bMenuMap"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
-                    android:drawableTop="@drawable/ic_useful_w"
-                    android:fitsSystemWindows="false"
-                    android:text="@string/btn_useful" />
-
-                <Button
-                    android:id="@+id/Button_Map"
-                    style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
                     android:drawableTop="@drawable/ic_map_w"
                     android:fitsSystemWindows="false"
                     android:text="@string/btn_map" />
 
                 <Button
-                    android:id="@+id/main_bAnimals"
+                    android:id="@+id/bMenuAnimals"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
                     android:drawableTop="@drawable/ic_animals_w"
                     android:fitsSystemWindows="false"
                     android:text="@string/btn_animals"
-                    android:textSize="16sp" />
+                    android:textSize="12sp" />
 
                 <Button
-                    android:id="@+id/ButtonTest"
+                    android:id="@+id/bMenuInfo"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
                     android:drawableTop="@drawable/ic_info_w"
                     android:fitsSystemWindows="false"
                     android:text="@string/btn_info" />
@@ -166,7 +144,7 @@
     </RelativeLayout>
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/ivODapps"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:src="@drawable/logo_odapps" />

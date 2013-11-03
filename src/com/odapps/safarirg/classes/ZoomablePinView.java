@@ -25,7 +25,7 @@ public class ZoomablePinView extends ImageView{
 		this.width = bm.getWidth();
 		this.height = bm.getHeight();
 	}
-		
+
 	public void setPosition (float posX, float posY, PointF centerPoint, PointF centerFocus, float saveScale) {
 		float deltaX = (posX - centerPoint.x) / saveScale;
 		float deltaY = (posY - centerPoint.y) / saveScale;
@@ -34,7 +34,7 @@ public class ZoomablePinView extends ImageView{
 		this.posX = posX;
 		this.posY = posY;
 		setMargins();
- 	}
+	}
 
 	public void moveOnZoom (float focusX, float focusY, float scale) {
 		posX = (scale * (posX - focusX)) + focusX;
@@ -47,7 +47,7 @@ public class ZoomablePinView extends ImageView{
 		posY += dy;
 		setMargins();
 	}
-	
+
 	private void setMargins() {
 		int leftMargin = (int) (posX - width/2);
 		int topMargin = (int) (posY - height);
@@ -55,9 +55,10 @@ public class ZoomablePinView extends ImageView{
 		layoutParams.setMargins( leftMargin, topMargin, 0, 0);
 		setLayoutParams(layoutParams);
 	}
-	
+
 	public PointF getPositionInPixels() {
 		PointF pinPos = new PointF(posXInPixels, posYInPixels);
 		return pinPos;
 	}
+	
 }

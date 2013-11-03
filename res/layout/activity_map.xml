@@ -2,11 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgraund_logo"
+    android:background="@drawable/background_logo"
     tools:context=".MapActivity" >
 
     <com.odapps.safarirg.classes.TouchImageView
-        android:id="@+id/touchImageViewMap"
+        android:id="@+id/tivMap"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_centerHorizontal="true"
@@ -15,12 +15,11 @@
         android:scaleType="center" />
 
     <Button
-        android:id="@+id/Button_Map"
+        android:id="@+id/bLocation"
         style="@style/ButtonSmall"
         android:layout_alignParentRight="true"
         android:layout_marginRight="24dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/backgraund_button"
         android:drawableTop="@drawable/ic_map_w"
         android:fitsSystemWindows="false" />
 
@@ -31,7 +30,7 @@
         android:layout_alignParentLeft="true" >
 
         <HorizontalScrollView
-            android:id="@+id/horizontalScrollView1"
+            android:id="@+id/hsvMapButtons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.14"
@@ -43,88 +42,108 @@
                 android:orientation="horizontal" >
 
                 <Button
-                    android:id="@+id/Button06"
+                    android:id="@+id/bStudyRoom"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_useful_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_useful" />
+                    android:text="@string/btn_study_room"
+                    android:textSize="12sp" />
 
                 <Button
-                    android:id="@+id/Button05"
+                    android:id="@+id/bFirstAid"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_useful_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_useful" />
+                    android:text="@string/btn_first_aid"
+                     android:textSize="10.5sp" />
 
                 <Button
-                    android:id="@+id/Button07"
+                    android:id="@+id/bToilet"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_map_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_map" />
+                    android:text="@string/btn_toilet" />
 
                 <Button
-                    android:id="@+id/Button09"
+                    android:id="@+id/bGiftShop"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_animals_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_animals"
-                    android:textSize="16sp" />
+                    android:text="@string/btn_gift_shop"
+                    android:textSize="12sp" />
 
                 <Button
-                    android:id="@+id/Button08"
+                    android:id="@+id/bInformation"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_info_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_info" />
+                    android:text="@string/btn_information" />
 
                 <Button
-                    android:id="@+id/Button04"
+                    android:id="@+id/bDiner"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_useful_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_useful" />
+                    android:text="@string/btn_diner" />
 
                 <Button
-                    android:id="@+id/Button03"
+                    android:id="@+id/bPettingZoo"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_useful_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_useful" />
+                    android:text="@string/btn_petting_zoo"
+                    android:textSize="9.5sp" />
 
                 <Button
-                    android:id="@+id/Button01"
+                    android:id="@+id/bRestaurant"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_map_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_map" />
+                    android:text="@string/btn_restaurant" />
 
                 <Button
-                    android:id="@+id/main_bAnimals"
+                    android:id="@+id/bPicnic"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_animals_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_animals"
-                    android:textSize="16sp" />
+                    android:text="@string/btn_picnic"
+                    android:textSize="12sp" />
 
                 <Button
-                    android:id="@+id/ButtonTest"
+                    android:id="@+id/bParking"
                     style="@style/ButtonMenu"
-                    android:background="@drawable/backgraund_button"
+                    android:layout_gravity="center"
                     android:drawableTop="@drawable/ic_info_w"
                     android:fitsSystemWindows="false"
-                    android:text="@string/btn_info" />
+                    android:text="@string/btn_parking" />
+
+                <Button
+                    android:id="@+id/bTrain"
+                    style="@style/ButtonMenu"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/ic_info_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_train"
+                    android:textSize="8.5sp" />
+
+                <Button
+                    android:id="@+id/bScooter"
+                    style="@style/ButtonMenu"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/ic_info_w"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/btn_scooter"
+                    android:textSize="8.5sp" />
             </LinearLayout>
-
         </HorizontalScrollView>
     </RelativeLayout>
 

@@ -1,10 +1,10 @@
 package com.odapps.safarirg.classes;
 
 public class News {
-	
+
 	private String mTitle;
 	private String mDescription;
-	
+
 	public String getmTitle() {
 		return mTitle;
 	}
@@ -17,8 +17,4 @@ public class News {
 	public void setmDescription(String mDescription) {
 		this.mDescription = mDescription;
 	}
-	
-	
-	
-
 }
