@@ -41,7 +41,7 @@ public class MapActivity extends Activity implements OnClickListener, OnTouchLis
 		mapView = (TouchImageView) findViewById(R.id.touchImageViewMap);
 		mapView.setImageResource(R.drawable.map);
 		mapView.setMaxZoom(10f);
-		mapView.setDefulatZoom(2.15f);
+		mapView.setDefulatZoom(2.3f);
 		
 		mBtn_Center = (Button) findViewById(R.id.Button_Map);
 		mBtn_Center.setOnClickListener(this);
