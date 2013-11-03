@@ -31,6 +31,8 @@ public class MainActivity extends Activity implements OnClickListener  {
 	private ViewFlipper mViewFlipper;
 	private Button mBtnMap, mBtnAnimals;
 
+	//Daniel Test
+	
 	private final int DURATION_OF_NEWS = 500000;
 
 	@Override
