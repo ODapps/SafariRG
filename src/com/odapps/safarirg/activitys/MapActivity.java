@@ -5,6 +5,7 @@ import android.graphics.PointF;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.Button;
@@ -26,6 +27,11 @@ public class MapActivity extends Activity implements OnClickListener, OnTouchLis
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_map);
 
+		// No Screen OFF
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		// No Animations to Activity
+		getWindow().setWindowAnimations(0);
+		
 		mapView = (TouchImageView) findViewById(R.id.tivMap);
 		mapView.setImageResource(R.drawable.map);
 		mapView.setMaxZoom(10f);

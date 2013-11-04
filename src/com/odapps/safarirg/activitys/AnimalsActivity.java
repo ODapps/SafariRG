@@ -11,6 +11,7 @@ import com.odapps.safarirg.classes.StandardListItem;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -28,6 +29,11 @@ public class AnimalsActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_animals);
 
+		// No Screen OFF
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		// No Animations to Activity
+		getWindow().setWindowAnimations(0);
+		
 		initialize();
 		fillList();
 	}

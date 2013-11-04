@@ -185,7 +185,7 @@ public final class R {
     }
     public static final class id {
         public static final int MarkView=0x7f0b0022;
-        public static final int action_settings=0x7f0b0029;
+        public static final int action_settings=0x7f0b002a;
         public static final int bDiner=0x7f0b001b;
         public static final int bFirstAid=0x7f0b0017;
         public static final int bGiftShop=0x7f0b0019;
@@ -212,17 +212,18 @@ public final class R {
         public static final int ivMammals=0x7f0b0003;
         public static final int ivMenuFlipper=0x7f0b000c;
         public static final int ivODapps=0x7f0b0012;
-        public static final int ivPic=0x7f0b0026;
+        public static final int ivPic=0x7f0b0027;
         public static final int ivReptiles=0x7f0b0004;
-        public static final int llLine=0x7f0b0024;
+        public static final int llLine=0x7f0b0025;
         public static final int lvAnimals=0x7f0b0000;
         public static final int lvClasses=0x7f0b0005;
-        public static final int textView1=0x7f0b0023;
+        public static final int progressBar1=0x7f0b0023;
+        public static final int textView1=0x7f0b0024;
         public static final int tivMap=0x7f0b0013;
-        public static final int tvAll=0x7f0b0025;
+        public static final int tvAll=0x7f0b0026;
         public static final int tvAppName=0x7f0b0006;
-        public static final int tvDes=0x7f0b0028;
-        public static final int tvName=0x7f0b0027;
+        public static final int tvDes=0x7f0b0029;
+        public static final int tvName=0x7f0b0028;
         public static final int tvNews=0x7f0b0008;
         public static final int vfClasses=0x7f0b0001;
         public static final int vfMenuAnimalsImages=0x7f0b0009;

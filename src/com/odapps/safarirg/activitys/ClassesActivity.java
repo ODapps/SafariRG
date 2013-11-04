@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -30,6 +31,11 @@ public class ClassesActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_classes);
 
+		// No Screen OFF
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		// No Animations to Activity
+		getWindow().setWindowAnimations(0);
+		
 		initialize();
 		fillList();
 	}
