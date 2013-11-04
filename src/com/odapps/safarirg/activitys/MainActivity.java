@@ -19,7 +19,11 @@ import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.odapps.safarirg.R;
+import com.odapps.safarirg.classes.C;
+import com.odapps.safarirg.modules.Module_GetHTTP;
 import com.parse.FindCallback;
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -30,8 +34,7 @@ public class MainActivity extends Activity implements OnClickListener  {
 	private Animation	mAnimation;
 	private Context 	mContext;
 	private ViewFlipper mViewFlipper;
-	private Button mBtnMap, mBtnAnimals;
-
+	private Button 		mBtnMap, mBtnAnimals;
 
 	private final int DURATION_OF_NEWS = 500000;
 
@@ -49,16 +52,17 @@ public class MainActivity extends Activity implements OnClickListener  {
 		mContext = getApplicationContext();		
 
 		// My Parse.com  initialize - NOT WORKING (OFIR)
-		//Parse.initialize(this, "M3PK2zNpCpDZUiLt7BkNyE4ng5HCGgfY0cnVdgCR", "e8FCKzzP1r8Qncg691HhwZ8VtP1C8O7o5TSmZiPn"); 
-		//ParseAnalytics.trackAppOpened(getIntent());
+		Parse.initialize(this, "M3PK2zNpCpDZUiLt7BkNyE4ng5HCGgfY0cnVdgCR", "e8FCKzzP1r8Qncg691HhwZ8VtP1C8O7o5TSmZiPn"); 
+		ParseAnalytics.trackAppOpened(getIntent());
 
 		mTextView = (TextView) findViewById(R.id.tvNews);
+
 		mViewFlipper = (ViewFlipper) findViewById(R.id.vfMenuAnimalsImages);
 
 		mViewFlipper.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
 		mViewFlipper.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
 			
-		mViewFlipper.setFlipInterval(5000);
+		mViewFlipper.setFlipInterval(C.TIMER_OF_FLIPVIEW);
 		mViewFlipper.startFlipping();
 
 	
@@ -68,26 +72,11 @@ public class MainActivity extends Activity implements OnClickListener  {
 
 		mBtnAnimals = (Button) findViewById(R.id.bMenuAnimals);
 		mBtnAnimals.setOnClickListener(this);
+		
+		
 	}
 
 	private void animateTextView(String result) {
-		/*
-		int textWidth = getTextViewWidth(mTextView);
-		int displayWidth = getDisplayWidth(mContext);
-
-		/* Start animation only when text is longer than dislay width. */
-
-		/*
-		if(displayWidth < textWidth) {
-			mAnimation = new TranslateAnimation(
-					-textWidth, displayWidth,
-					0, 0);
-			mAnimation.setDuration(DURATION_OF_NEWS * mTextView.getText().length());    // Set custom duration.
-			mAnimation.setRepeatCount(Animation.INFINITE);    // Infinite animation.
-
-			mTextView.startAnimation(mAnimation);
-		}
-		 */
 
 		int textWidth = getTextViewWidth(mTextView);
 
@@ -98,22 +87,9 @@ public class MainActivity extends Activity implements OnClickListener  {
 		mAnimation.setRepeatCount(Animation.INFINITE);    // Infinite animation.
 		//mAnimation.scaleCurrentDuration(textWidth);
 		mTextView.startAnimation(mAnimation);
+		
+		Toast.makeText(getApplicationContext(), "123", 1).show();
 
-
-		ParseQuery<ParseObject> query = ParseQuery.getQuery("Classes");
-		query.whereEqualTo("name", "Birds");
-		query.findInBackground(new FindCallback<ParseObject>() {
-
-			@Override
-			public void done(List<ParseObject> scoreList, ParseException e) {
-				if (e == null) {
-					Log.d("score", "Retrieved " + scoreList.size() + " scores");
-					Toast.makeText(getApplicationContext(), scoreList.size(), Toast.LENGTH_LONG).show();
-				} else {
-					Log.d("score", "Error: " + e.getMessage());
-				}
-			}
-		});
 	}
 
 	private int getTextViewWidth(TextView textView) {

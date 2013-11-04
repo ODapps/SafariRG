@@ -16,4 +16,18 @@ public class C {
 	public static final int LION = 2;
 	public static final int PARROT = 3;
 	public static final int SNAKE = 4;
+	
+	/////////////////////////// Activity's Constants ///////////////////////////
+		
+	//Main Activity
+	public static final int TIMER_OF_FLIPVIEW = 2000; // MilliSeconds
+
+	
+	//Splash Activity
+	public static final long TIMER_OF_SPLASH = 5000; // MilliSeconds
+	
+	
+	
+	
+	
 }
