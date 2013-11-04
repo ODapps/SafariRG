@@ -59,39 +59,37 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-            <ImageView
-                android:id="@+id/ivMenuFlipper"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/menu_polaroid_frames" />
-
             <ViewFlipper
                 android:id="@+id/vfMenuAnimalsImages"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.68" >
 
-                <Button
-                    android:id="@+id/Button01"
-                    style="@style/ButtonMenu"
-                    android:drawableTop="@drawable/ic_useful_w"
-                    android:fitsSystemWindows="false"
-                    android:text="@string/btn_useful" />
+                <ImageView
+                    android:id="@+id/ivMainActivityBirds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@raw/activity_main_frame_birds" />
 
-                <Button
-                    android:id="@+id/Button02"
-                    style="@style/ButtonMenu"
-                    android:drawableTop="@drawable/ic_info_w"
-                    android:fitsSystemWindows="false"
-                    android:text="@string/btn_info" />
+                <ImageView
+                    android:id="@+id/ivMainActivityLion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@raw/activity_main_frame_lion" />
 
-                <Button
-                    android:id="@+id/Button03"
-                    style="@style/ButtonMenu"
-                    android:drawableTop="@drawable/ic_map_w"
-                    android:fitsSystemWindows="false"
-                    android:text="@string/btn_map" />
+                <ImageView
+                    android:id="@+id/ivMainActivityTurtle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@raw/activity_main_frame_turtle" />
+
             </ViewFlipper>
+
+            <ImageView
+                android:id="@+id/ivMenuFlipper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@raw/activity_main_frame" />
         </RelativeLayout>
     </LinearLayout>
 

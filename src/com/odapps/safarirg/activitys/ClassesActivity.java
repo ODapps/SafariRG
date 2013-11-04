@@ -49,7 +49,7 @@ public class ClassesActivity extends Activity {
 			public void onClick(View v) {
 				Intent animalsListIntent = new Intent(ClassesActivity.this, AnimalsActivity.class);
 				switch (vfClasses.getCurrentView().getId()) {
-				case R.id.ivBirds:
+				case R.id.ivMainActivityBirds:
 					animalsListIntent.putExtra("animalClass", C.BIRD);
 					break;
 				case R.id.ivMammals:

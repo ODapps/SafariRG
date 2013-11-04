@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.TextView;
@@ -55,9 +56,13 @@ public class MainActivity extends Activity implements OnClickListener  {
 		mTextView = (TextView) findViewById(R.id.tvNews);
 		mViewFlipper = (ViewFlipper) findViewById(R.id.vfMenuAnimalsImages);
 
+		mViewFlipper.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+		mViewFlipper.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+			
 		mViewFlipper.setFlipInterval(5000);
 		mViewFlipper.startFlipping();
 
+	
 
 		mBtnMap = (Button) findViewById(R.id.bMenuMap);
 		mBtnMap.setOnClickListener(this);
