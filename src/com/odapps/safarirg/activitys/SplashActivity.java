@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.Menu;
+import android.view.WindowManager;
 
 import com.odapps.safarirg.R;
 import com.odapps.safarirg.classes.C;
@@ -16,6 +17,11 @@ public class SplashActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
+		
+		// No Screen OFF
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		// No Animations to Activity
+		getWindow().setWindowAnimations(0);
 		
 		Splash timer = new Splash(C.TIMER_OF_SPLASH, 1000);
 	    timer.start();
