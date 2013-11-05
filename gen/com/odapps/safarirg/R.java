@@ -184,8 +184,12 @@ public final class R {
         public static final int marker=0x7f02000c;
     }
     public static final class id {
-        public static final int MarkView=0x7f0b0022;
-        public static final int action_settings=0x7f0b002a;
+        public static final int MarkView=0x7f0b0028;
+        public static final int action_settings=0x7f0b0030;
+        public static final int b1=0x7f0b0024;
+        public static final int b2=0x7f0b0025;
+        public static final int b3=0x7f0b0026;
+        public static final int b4=0x7f0b0027;
         public static final int bDiner=0x7f0b001b;
         public static final int bFirstAid=0x7f0b0017;
         public static final int bGiftShop=0x7f0b0019;
@@ -212,19 +216,21 @@ public final class R {
         public static final int ivMammals=0x7f0b0003;
         public static final int ivMenuFlipper=0x7f0b000c;
         public static final int ivODapps=0x7f0b0012;
-        public static final int ivPic=0x7f0b0027;
+        public static final int ivPic=0x7f0b002d;
+        public static final int ivProfileImage=0x7f0b0022;
         public static final int ivReptiles=0x7f0b0004;
-        public static final int llLine=0x7f0b0025;
+        public static final int llLine=0x7f0b002b;
         public static final int lvAnimals=0x7f0b0000;
         public static final int lvClasses=0x7f0b0005;
-        public static final int progressBar1=0x7f0b0023;
-        public static final int textView1=0x7f0b0024;
+        public static final int progressBar1=0x7f0b0029;
+        public static final int textView1=0x7f0b002a;
         public static final int tivMap=0x7f0b0013;
-        public static final int tvAll=0x7f0b0026;
+        public static final int tvAll=0x7f0b002c;
         public static final int tvAppName=0x7f0b0006;
-        public static final int tvDes=0x7f0b0029;
-        public static final int tvName=0x7f0b0028;
+        public static final int tvDes=0x7f0b002f;
+        public static final int tvName=0x7f0b002e;
         public static final int tvNews=0x7f0b0008;
+        public static final int tvProfileDesc=0x7f0b0023;
         public static final int vfClasses=0x7f0b0001;
         public static final int vfMenuAnimalsImages=0x7f0b0009;
     }
@@ -233,15 +239,17 @@ public final class R {
         public static final int activity_classes=0x7f030001;
         public static final int activity_main=0x7f030002;
         public static final int activity_map=0x7f030003;
-        public static final int activity_splash=0x7f030004;
-        public static final int all_list_line=0x7f030005;
-        public static final int pic_name_des_list_line=0x7f030006;
-        public static final int pic_name_list_line=0x7f030007;
+        public static final int activity_profile=0x7f030004;
+        public static final int activity_splash=0x7f030005;
+        public static final int all_list_line=0x7f030006;
+        public static final int pic_name_des_list_line=0x7f030007;
+        public static final int pic_name_list_line=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
         public static final int map=0x7f0a0001;
-        public static final int splash=0x7f0a0002;
+        public static final int profile=0x7f0a0002;
+        public static final int splash=0x7f0a0003;
     }
     public static final class raw {
         public static final int activity_main_frame=0x7f050000;
@@ -251,6 +259,7 @@ public final class R {
         public static final int classes_birds=0x7f050004;
         public static final int classes_mammals=0x7f050005;
         public static final int classes_reptiles=0x7f050006;
+        public static final int profile_gorilla=0x7f050007;
     }
     public static final class string {
         public static final int action_settings=0x7f080001;
@@ -279,6 +288,7 @@ public final class R {
         public static final int btn_toilet=0x7f080009;
         public static final int btn_train=0x7f080011;
         public static final int btn_useful=0x7f080004;
+        public static final int gorilla_desc=0x7f080014;
         public static final int splash_loading=0x7f080002;
     }
     public static final class style {

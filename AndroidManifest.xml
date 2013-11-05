@@ -16,7 +16,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
-        <activity android:name=".activitys.SplashActivity" >
+        <activity android:name="com.odapps.safarirg.activitys.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,6 +32,8 @@
         <activity android:name="com.odapps.safarirg.activitys.ClassesActivity" >
         </activity>
         <activity android:name="com.odapps.safarirg.activitys.AnimalsActivity" >
+        </activity>
+        <activity android:name="com.odapps.safarirg.activitys.ProfileActivity" >
         </activity>
     </application>
 

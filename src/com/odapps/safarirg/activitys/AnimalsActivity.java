@@ -10,6 +10,7 @@ import com.odapps.safarirg.classes.StandardListItem;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
@@ -33,7 +34,7 @@ public class AnimalsActivity extends Activity {
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		// No Animations to Activity
 		getWindow().setWindowAnimations(0);
-		
+
 		initialize();
 		fillList();
 	}
@@ -50,8 +51,14 @@ public class AnimalsActivity extends Activity {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
+				StandardListItem animal = animalsList.get(position);
+				Intent profileIntent = new Intent(AnimalsActivity.this, ProfileActivity.class);
+				
+				int animalId = animal.getItemId();
+				if (animalId == C.GORILLA) {
+					profileIntent.putExtra("animalClass", animalId);
+					startActivity(profileIntent);
+				}
 			}
 		});
 		lvAnimals.setAdapter(animalsAdapter);
